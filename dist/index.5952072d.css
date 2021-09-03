@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.skin {
+    position: relative;
+    background-color: #ffcb00;
+    height: 100vh;
+}
+
+.nose {
+    border: 7px solid black;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 50%;
+    top: 145px;
+    margin-left: -10px;
+    border-bottom: none;
+    z-index: 1;
+    border-color: black transparent transparent;
+}
+
+.yuan {
+    position: absolute;
+    width: 14px;
+    height: 7px;
+    background-color: black;
+    top: -14px;
+    left: -7px;
+    border-radius: 10px 10px 0 0;
+}
+
+.eye {
+    border: 2px solid #000;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    margin-left: -23px;
+    background-color: #2e2e2e;
+    border-radius: 50%;
+}
+
+.eye::before {
+    content: "";
+    border: 2px solid black;
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    left: 4px;
+    top: 2px;
+}
+
+.eye.left {
+    transform: translateX(-100px);
+}
+
+.eye.right {
+    transform: translateX(100px);
+}
+
+.mouth {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    margin-left: -100px;
+}
+
+.mouth .up {
+    position: relative;
+    top: -20px
+}
+
+.mouth .up .lip {
+    border: 5px solid black;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    position: absolute;
+    border-top-color: transparent;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.mouth .up .lip.left {
+    border-radius: 0 0 0 50px;
+    transform: rotate(-25deg) translateX(-53px);
+}
+
+.mouth .up .lip.right {
+    border-radius: 0 0 50px 0;
+    transform: rotate(25deg) translateX(53px);
+}
+
+.mouth .up .lip::before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 30px;
+    position: absolute;
+    background: #ffcb00;
+    bottom: 0;
+}
+
+.mouth .up .lip.left::before {
+    right: -5px;
+}
+
+.mouth .up .lip.right::before {
+    left: -5px;
+}
+
+.mouth .down {
+    border: 1px solid red;
+    height: 230px;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+.mouth .down .yuan1 {
+    border: 1px solid blue;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+/*# sourceMappingURL=index.5952072d.css.map */
