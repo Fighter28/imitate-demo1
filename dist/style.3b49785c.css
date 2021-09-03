@@ -8,11 +8,10 @@
 ::after {
   box-sizing: border-box;
 }
-
 .skin {
   position: relative;
   background-color: #ffcb00;
-  height: 100vh;
+  min-height: 100vh;
 }
 @keyframes wave {
   0% {
@@ -113,7 +112,6 @@
   margin-left: -50px;
   background-color: #ffcb00;
 }
-
 .mouth .up .lip.left {
   border-radius: 0 0 0 50px;
   transform: rotate(-25deg) translateX(-53px);
@@ -121,7 +119,7 @@
 
 .mouth .up .lip.right {
   border-radius: 0 0 50px 0;
-  transform: rotate(25deg) translateX(53px);
+  transform: rotate(25deg) translateX(55px);
 }
 
 .mouth .up .lip::before {

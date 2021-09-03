@@ -11,7 +11,7 @@
 .skin {
   position: relative;
   background-color: #ffcb00;
-  min-height:50vh;
+  min-height: 100vh;
 }
 @keyframes wave {
   0% {
@@ -112,7 +112,7 @@
   margin-left: -50px;
   background-color: #ffcb00;
 }
- .mouth .up .lip.left {
+.mouth .up .lip.left {
   border-radius: 0 0 0 50px;
   transform: rotate(-25deg) translateX(-53px);
 }
